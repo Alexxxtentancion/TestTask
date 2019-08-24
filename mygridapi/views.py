@@ -4,6 +4,10 @@ from .models import Person
 from .serializers import PersonSerializer
 from rest_framework import routers, serializers, viewsets
 
+
+
+
+
 class PersonView(viewsets.ModelViewSet):
     serializer_class = PersonSerializer
     queryset = Person.objects.all()
