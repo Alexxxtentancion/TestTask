@@ -22,10 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*n)pj5pvq%=9x(r5ei8aaek052mnhbspagrssupax)r(o!de+1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = ['http://localhost:1962','http://localhost:1841','https://fiddle.sencha.com','http://localhost:63773','http://127.0.0.1:8000']
-ALLOWED_HOSTS =[]
+ALLOWED_HOSTS =['ggous.pythonanywhere.com','localhost','extjs-artem.firebaseapp.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -122,7 +121,9 @@ STATIC_URL = '/static/'
 
 
 
-CORS_ORIGIN_WHITELIST = 'http://localhost:1962','http://localhost:1841','https://fiddle.sencha.com','http://localhost:63773',
+
+CORS_ORIGIN_WHITELIST = 'http://localhost:1962','http://localhost:1841','http://localhost:63773','https://extjs-artem.firebaseapp.com',
+
 
 
 REST_FRAMEWORK = {
